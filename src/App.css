@@ -1,0 +1,9 @@
+.addbtn {
+  background-color: lightblue;
+  border: 1px solid lightblue;
+  border-radius: 50%;
+}
+
+.addIcon {
+  color: white
+}

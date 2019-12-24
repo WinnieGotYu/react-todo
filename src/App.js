@@ -62,7 +62,10 @@ class App extends Component {
               this.updateInput("newItem", e.target.value)
             }
           />
-          <button onClick={() => this.addItem()}>Add</button>
+          <br />
+          <button className="addbtn" onClick={() => this.addItem()}>
+            <i className="addIcon fas fa-plus"></i>{" "}
+          </button>
           <br />
           <ul>
             {this.state.list.map(item => {
@@ -70,7 +73,7 @@ class App extends Component {
                 <li key={item.id}>
                   {item.value}
                   <button onClick={() => this.deleteItem(item.id)}>
-                    X
+                  <i className="deletebtn fas fa-times"></i>
                   </button>
                 </li>
               );
