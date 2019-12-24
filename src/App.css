@@ -21,6 +21,14 @@ body {
 .addItemTitle {
   margin-bottom: 0;
 }
+
+#addItemInput {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid lightblue;
+  width: 10rem;
+}
+
 .addbtn {
   background-color: lightblue;
   border: 1px solid lightblue;
