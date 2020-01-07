@@ -9,13 +9,12 @@ body {
 
 
 .mainContainer {
-  border: 4px solid pink;
+  border: 5px solid pink;
   border-radius: 5px;
-  margin-left: 5em;
-  margin-right: 5em;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 }
 
 .addItemTitle {
@@ -34,11 +33,16 @@ body {
   border: 1px solid lightblue;
   border-radius: 50%;
   margin-top: 5px;
-  display: flex;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 1.5px rgb(124, 201, 226);
+  color: white;
 }
 
-.addIcon {
-  color: white
+.addbtn:hover {
+  box-shadow: none;
+  top: 1.5px;
 }
 
 ul {
@@ -55,7 +59,10 @@ li {
   background-color: pink;
   border: pink;
   border-radius: 50%;
-  margin-left: 7px;
+  border-top: -3px;  
+  cursor: pointer;
+  position: absolute;
+  margin-left: 6px;
 }
 
 .deleteIcon {
